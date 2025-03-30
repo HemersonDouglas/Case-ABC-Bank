@@ -1,0 +1,62 @@
+version: 2
+
+sources:
+  - name: case-abc-bank
+    schema: dbo
+    description: "Fonte de dados do ABC Bank"
+    tables:
+      - name: operacoes-diretas
+        description: "Tabela com dados das operações diretas"
+        columns:
+          - name: cliente
+            description: "Nome do cliente"
+            tests:
+              - not_null
+          - name: cnpj
+            description: "CNPJ do cliente"
+            tests:
+              - unique
+              - not_null
+          - name: descricao_do_projeto
+            description: "Descrição do projeto"
+            tests:
+              - not_null
+          - name: uf
+            description: "Unidade federativa (UF)"
+          - name: juros
+            description: "Percentual da taxa de juros"
+          - name: valor_Contratado_Reais
+            description: "valor contratado das operacoes do ABC"
+          - name: valor_Desembolsado_Reais
+            description: " O valor liberado"
+        tables:
+      - name: operacoes-indiretas
+        description: "Tabela com dados das operações diretas"
+        columns:
+          - name: cliente
+            description: "Nome do cliente"
+            tests:
+              - not_null
+          - name: cpf_cnpj
+            description: "CNPJ do cliente"
+            tests:
+              - unique
+              - not_null
+          - name: descricao_do_projeto
+            description: "Descrição do projeto"
+            tests:
+              - not_null
+          - name: uf
+            description: "Unidade federativa (UF)"
+          - name: juros
+            description: "Percentual da taxa de juros"
+          - name: valor_da_operacao_em_reais
+            description: "valor contratado das operacoes do ABC"
+          - name: valor_desembolsado_reais
+            description: " O valor liberado"              
+
+
+
+
+
+

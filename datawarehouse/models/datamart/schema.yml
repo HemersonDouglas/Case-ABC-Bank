@@ -1,0 +1,59 @@
+version: 2
+
+models:
+  - name: dm_fato_operacoes_diretas
+    description: "Tabela fato para dados de operações diretas"
+    columns:
+      - name: data_da_contratacao
+        description: "Data que foi feito a operação"
+        tests:
+          - not_null
+      - name: cnpj
+        description: "CNPJ do cliente"
+        tests:
+          - unique
+          - not_null
+      - name: prazo_carencia_meses
+        description: "E o periodo durante o qual o cliente paga somente os juros do financiamento contratado"
+      - name: prazo_amortizacao_meses
+        description: "E o periodo, apos o prazo de carencia"
+      - name: uf
+        description: "Unidade federativa (UF)"
+      - name: juros
+        description: "Percentual da taxa de juros"
+      - name: valor_contratado_reais
+        description: "Valor contratado das operações do ABC"
+      - name: valor_desembolsado_reais
+        description: "O valor liberado"
+
+  - name: dm_fato_operacoes_indiretas
+    description: "Tabela fato para dados de operações diretas"
+    columns:
+      - name: data_da_contratacao
+        description: "Data que foi feito a operação"
+        tests:
+          - not_null
+      - name: cnpj
+        description: "CNPJ do cliente"
+        tests:
+          - unique
+          - not_null
+      - name: prazo_carencia_meses
+        description: "E o periodo durante o qual o cliente paga somente os juros do financiamento contratado"
+      - name: prazo_amortizacao_meses
+        description: "E o periodo, apos o prazo de carencia"
+      - name: uf
+        description: "Unidade federativa (UF)"
+      - name: juros
+        description: "Percentual da taxa de juros"
+      - name: valor_contratado_reais
+        description: "Valor contratado das operações do ABC"
+      - name: valor_desembolsado_reais
+        description: "O valor liberado"
+                  
+
+
+
+
+
+
