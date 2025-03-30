@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: case-abc-bank
+    schema: dbo
+    description: "Fonte de dados do ABC Bank"
+    tables:
+      - name: operacoes-diretas
+        description: "Tabela com dados das operações diretas"
+        columns:
+          - name: cliente
+            description: "Nome do cliente"
+            tests:
+              - not_null
+          - name: cnpj
+            description: "CNPJ do cliente"
+            tests:
+              - unique
+              - not_null
+          - name: descricao_do_projeto
+            description: "Descrição do projeto"
+            tests:
+              - not_null
+          - name: uf
+            description: "Unidade federativa (UF)"
+          - name: juros
+            description: "Percentual da taxa de juros"
+
+
+
+
+

@@ -14,7 +14,4 @@ clean-targets:
 models:
   datawarehouse:
     +schema: dbo
-    example:
-      +materialized: view
-
-
+    +materialized: view  # Define o materialization padrão para todas as models deste projeto
