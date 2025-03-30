@@ -1,0 +1,42 @@
+[0m21:49:41.220371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E0EF7F500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E0F359EE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E0BBC7B30>]}
+
+
+============================== 21:49:41.226372 | 4d7553a2-6e2a-4ce6-9791-5fe13f155888 ==============================
+[0m21:49:41.226372 [info ] [MainThread]: Running with dbt=1.8.9
+[0m21:49:41.227372 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ubicase01\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m21:50:47.953649 [debug] [MainThread]: Starter project path: C:\Users\ubicase01\Desktop\Entrega\Case-ABC-Bank\.venv\Lib\site-packages\dbt\include\starter_project
+[0m21:50:48.058433 [info ] [MainThread]: 
+Your new dbt project "datawarehouse" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:50:48.060438 [info ] [MainThread]: Setting up your profile.
+[0m21:52:15.078437 [info ] [MainThread]: Profile datawarehouse written to C:\Users\ubicase01\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m21:52:15.084845 [debug] [MainThread]: Command `dbt init` succeeded at 21:52:15.084845 after 153.97 seconds
+[0m21:52:15.085846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E0F6E1F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E098E1CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E0F618D70>]}
+[0m21:52:15.086848 [debug] [MainThread]: Flushing usage events
+[0m00:28:01.682709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011AC27BFE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011AC27BF500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011AC2FAEE10>]}
+
+
+============================== 00:28:01.682709 | 4e0ee11d-e44f-472f-bbff-d2304cec3426 ==============================
+[0m00:28:01.682709 [info ] [MainThread]: Running with dbt=1.8.9
+[0m00:28:01.698335 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ubicase01\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m00:28:01.698335 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\ubicase01\Desktop\Entrega\Case-ABC-Bank\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m00:28:01.698335 [debug] [MainThread]: Command `dbt run` failed at 00:28:01.698335 after 0.12 seconds
+[0m00:28:01.698335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011AC2D47E60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011AC2F298E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011AC25C0EF0>]}
+[0m00:28:01.698335 [debug] [MainThread]: Flushing usage events

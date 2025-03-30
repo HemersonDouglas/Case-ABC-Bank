@@ -1,0 +1,17 @@
+
+datawarehouse:
+  outputs:
+    dev:
+      database: case-abc-bank
+      host: nt-ent-tstptc-0
+      port: 1433
+      password: '123'
+      threads: 1
+      type: sqlserver
+      driver: "ODBC Driver 18 for SQL Server"
+      trust_cert: True
+      user: sa
+      schema: dbo  # Verifique se o schema está correto
+  target: dev
+
+
