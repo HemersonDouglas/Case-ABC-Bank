@@ -52,6 +52,8 @@ graph TD
     E --> E1
     E1 --> E2
 ```
+1. Seeds
+Os seeds são dados estáticos carregados no Data Warehouse a partir de arquivos CSV. Neste projeto, usamos seeds para carregar dados de operações financeiras.
 
 
 
