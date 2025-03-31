@@ -33,6 +33,14 @@ try:
             df = pd.read_csv(csv_path, delimiter=";")
             print(f"✅ Arquivo CSV '{csv_file}' carregado com {df.shape[0]} linhas e {df.shape[1]} colunas.")
             
+            # Remover a linha onde todas as colunas são NULL
+            df = df.dropna(how='all')
+
+            # Remover ou substituir os valores NULL por um valor padrão (por exemplo, 0 ou uma string vazia)
+            df = df.fillna('')  # Substitui os valores null por uma string vazia
+            # Ou, se preferir substituir por 0, use:
+            # df = df.fillna(0)
+
             # Definir o nome da tabela com base no nome do arquivo CSV
             table_name = os.path.splitext(csv_file)[0]  # Usa o nome do arquivo (sem extensão) como nome da tabela
 
@@ -43,5 +51,7 @@ try:
 
 except Exception as e:
     print(f"❌ Erro na conexão ou na inserção dos dados: {e}")
+
+
 
 
