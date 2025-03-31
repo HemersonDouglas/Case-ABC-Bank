@@ -58,13 +58,15 @@ Os seeds são dados estáticos carregados no Data Warehouse a partir de arquivos
 2. Models
 Os models definem as transformações de dados usando SQL. Eles são divididos em duas camadas principais: staging e datamart.
 
-Staging
+Staging:
+
 A camada de staging é responsável por preparar e limpar os dados antes que eles sejam carregados nas tabelas finais de análise.
 
 stg_operacoes_diretas.sql: Trata e formata os dados de operacoes diretas extraídos da planilha csv.
 stg_operacoes_diretas.sql: Trata e formata os dados de operacoes indiretas extraídos da planilha csv.
 
-Datamart
+Datamart:
+
 A camada de datamart é onde os dados finais de análise são armazenados. Eles são baseados nos dados preparados pela camada de staging.
 
 3. Sources
@@ -127,9 +129,11 @@ databasesales:
 Executar os Seeds do DBT:
 
 dbt seed
+
 Executar as Transformações do DBT:
 
 dbt run
+
 Verificar o Estado do Projeto:
 
 dbt test
