@@ -155,8 +155,11 @@ O Power BI se conecta ao SQL Server utilizando DirectQuery e Import Mode, garant
 Foram desenvolvidas medidas DAX para facilitar a análise dos dados financeiros, incluindo:
 
 📌 1. Valor Total das Operações (Contratado e Desembolsado)
+
 📌 2. Total de Valor Contratado nos Últimos 3 Anos
+
 📌 3. Municípios com Maior Volume de Operações
+
 📌 4. Distribuição do Valor Desembolsado por Modalidade e Produto
 
 📊 Dashboards Criados
