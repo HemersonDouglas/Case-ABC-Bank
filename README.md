@@ -16,38 +16,23 @@ Este projeto foi desenvolvido para a ABC Bank e utiliza DBT (Data Build Tool) e 
 
 ```mermaid
 graph TD
-    A[Início] --> B[Extração de Dados das Planilhas CSVs]
-    B --> C[Transformação dos Dados com Python e DBT]
-    C --> D[Armazenamento no SQL Server]
-    D --> E[Criação de Modelos e Dashboards no Power BI]
-    E --> F[Fim]
+    A[📂 Extração CSVs] --> B[⚙️ Transformação]
+    B --> C[💾 Armazenamento SQL Server]
+    C --> D[📊 Dashboards Power BI]
 
     subgraph Extração
-        B1[Ler Arquivos CSV]
-        B2[Normalizar Dados]
+        A1[Ler CSVs] --> A2[Limpeza]
     end
 
     subgraph Transformação
-        C1[Limpeza e Tratamento]
-        C2[Modelagem com DBT]
+        B1[Modelagem DBT] --> B2[Normalização]
     end
 
     subgraph Armazenamento
-        D1[Gravar Dados Processados no SQL Server]
+        C1[SQL Server]
     end
 
-    subgraph Visualização
-        E1[Criar Medidas e Relatórios]
-        E2[Construir Dashboards]
+    subgraph Dashboards
+        D1[Power BI Relatórios]
     end
 
-    B --> B1
-    B1 --> B2
-    B2 --> C
-    C --> C1
-    C1 --> C2
-    C2 --> D
-    D --> D1
-    D1 --> E
-    E --> E1
-    E1 --> E2
