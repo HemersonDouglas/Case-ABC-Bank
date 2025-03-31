@@ -1,4 +1,3 @@
-{% docs overview %}
 
 # Teste prático processo seletivo Ibrowse
 
@@ -17,7 +16,7 @@ Este projeto foi desenvolvido para a ABC Bank e utiliza DBT (Data Build Tool) e 
 
 ---mermaid
 
-graph TD
+graph TD;
     A[Início] --> B[Extração de Dados das Planilhas CSVs]
     B --> C[Transformação dos Dados com Python e DBT]
     C --> D[Armazenamento no SQL Server]
@@ -54,5 +53,3 @@ graph TD
     E --> E1
     E1 --> E2
 ---
-
-{% enddocs %}
