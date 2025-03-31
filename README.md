@@ -75,6 +75,7 @@ Os snapshots são utilizados para manter um histórico de como os dados mudam ao
 
 Estrutura de Diretórios
 
+```plaintext
 ├── models
 │   ├── staging
 │   │   ├── stg_operacoes_diretas.sql
@@ -88,6 +89,7 @@ Estrutura de Diretórios
 │   └── movimentacao_commodities.csv
 ├── dbt_project.yml
 └── README.md
+```
 
 
 Executando o Projeto
