@@ -165,9 +165,13 @@ Foram desenvolvidas medidas DAX para facilitar a análise dos dados financeiros,
 📊 Dashboards Criados
 
 ✅ Visão Geral – Análise do volume de operações (contratado x desembolsado)
+
 ✅ Distribuição Geográfica – Volume de operações por UF e Município
+
 ✅ Análise por Modalidade – Comparação entre operações diretas e indiretas
+
 ✅ Histórico de Taxas – Evolução da taxa média de juros ao longo do tempo
+
 ✅ Top Clientes e Produtos – Clientes e produtos com maior participação
 
 📥 Atualização dos Dados
