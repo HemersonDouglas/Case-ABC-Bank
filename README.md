@@ -99,6 +99,7 @@ Executando o Projeto
 Requisitos:
 
 Python 3.12
+
 DBT
 
 Passos para Execução
@@ -120,7 +121,7 @@ databasesales:
   target: dev
   outputs:
     dev:
-      type: postgres
+      type: sqlserver
       host: <DB_HOST_PROD>
       user: <DB_USER_PROD>
       password: <DB_PASS_PROD>
