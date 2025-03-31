@@ -15,24 +15,10 @@ Este projeto foi desenvolvido para a ABC Bank e utiliza DBT (Data Build Tool) e 
 ## Estrutura do Projeto
 
 ```mermaid
-graph TD
-    A[📂 Extração CSVs] --> B[⚙️ Transformação]
-    B --> C[💾 Armazenamento SQL Server]
-    C --> D[📊 Dashboards Power BI]
+graph LR  
+    A[📂 Extrair CSVs] -->|Ler Arquivos| B[🧹 Limpar Dados]  
+    B -->|Transformar com DBT| C[⚙️ Modelagem]  
+    C -->|Armazenar Dados| D[💾 SQL Server]  
+    D -->|Gerar Relatórios| E[📊 Power BI]  
 
-    subgraph Extração
-        A1[Ler CSVs] --> A2[Limpeza]
-    end
-
-    subgraph Transformação
-        B1[Modelagem DBT] --> B2[Normalização]
-    end
-
-    subgraph Armazenamento
-        C1[SQL Server]
-    end
-
-    subgraph Dashboards
-        D1[Power BI Relatórios]
-    end
 
