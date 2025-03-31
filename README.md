@@ -110,7 +110,7 @@ git clone <URL-do-Repositório>
 cd <Nome-do-Repositório>
 Instalar o DBT:
 
-pip install dbt-core dbt-postgres
+pip install dbt-core dbt-sqlserver
 Configurar o DBT:
 
 Configure o arquivo profiles.yml para se conectar ao seu Data Warehouse. O arquivo deve estar no diretório ~/.dbt/ ou no diretório especificado pela variável de ambiente DBT_PROFILES_DIR.
