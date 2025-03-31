@@ -110,6 +110,7 @@ Configurar o DBT:
 Configure o arquivo profiles.yml para se conectar ao seu Data Warehouse. O arquivo deve estar no diretório ~/.dbt/ ou no diretório especificado pela variável de ambiente DBT_PROFILES_DIR.
 Exemplo de profiles.yml:
 
+```plaintext
 databasesales:
   target: dev
   outputs:
@@ -122,8 +123,7 @@ databasesales:
       dbname: <DB_NAME_PROD>
       schema: <DB_SCHEMA_PROD>
       threads: 1
-
-
+```
 Executar os Seeds do DBT:
 
 dbt seed
