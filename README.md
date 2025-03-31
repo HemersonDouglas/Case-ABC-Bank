@@ -142,6 +142,34 @@ Verificar o Estado do Projeto:
 
 dbt test
 
+📊 Análise de Dados no Power BI
+
+Este projeto utiliza Power BI para visualizar e analisar os dados extraídos e transformados. Os dados são armazenados no SQL Server, e o Power BI foi conectado diretamente ao banco para criar dashboards interativos.
+
+🔗 Conexão com o SQL Server
+
+O Power BI se conecta ao SQL Server utilizando DirectQuery e Import Mode, garantindo flexibilidade na atualização dos dados e melhor desempenho nas análises.
+
+📌 Principais Métricas Criadas (DAX)
+
+Foram desenvolvidas medidas DAX para facilitar a análise dos dados financeiros, incluindo:
+
+📌 1. Valor Total das Operações (Contratado e Desembolsado)
+📌 2. Total de Valor Contratado nos Últimos 3 Anos
+📌 3. Municípios com Maior Volume de Operações
+📌 4. Distribuição do Valor Desembolsado por Modalidade e Produto
+
+📊 Dashboards Criados
+
+✅ Visão Geral – Análise do volume de operações (contratado x desembolsado)
+✅ Distribuição Geográfica – Volume de operações por UF e Município
+✅ Análise por Modalidade – Comparação entre operações diretas e indiretas
+✅ Histórico de Taxas – Evolução da taxa média de juros ao longo do tempo
+✅ Top Clientes e Produtos – Clientes e produtos com maior participação
+
+📥 Atualização dos Dados
+
+Os dados são atualizados periodicamente via conexão com o SQL Server. O Power BI permite atualização automática via gateway ou manual conforme necessário.
 
 
 
