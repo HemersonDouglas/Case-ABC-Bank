@@ -80,14 +80,15 @@ Estrutura de Diretórios
 │   │   ├── stg_operacoes_diretas.sql
 │   │   └── stg_operacoes_indiretas.sql
 │   └── datamart
-│       └── dm_dim_clientes_op_diretas.sql
-│        └── dm_dim_clientes_op_indiretas.sql
-│        └── dm_fato_operacoes_diretas.sql
-│        └── dm_fato_operacoes_indiretas.sql
+│       ├── dm_dim_clientes_op_diretas.sql
+│       ├── dm_dim_clientes_op_indiretas.sql
+│       ├── dm_fato_operacoes_diretas.sql
+│       ├── dm_fato_operacoes_indiretas.sql
 ├── seeds
 │   └── movimentacao_commodities.csv
 ├── dbt_project.yml
 └── README.md
+
 
 Executando o Projeto
 
