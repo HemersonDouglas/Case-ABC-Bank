@@ -14,9 +14,8 @@ Este projeto foi desenvolvido para a ABC Bank e utiliza DBT (Data Build Tool) e 
 
 ## Estrutura do Projeto
 
----mermaid
-
-graph TD;
+```mermaid
+graph TD
     A[Início] --> B[Extração de Dados das Planilhas CSVs]
     B --> C[Transformação dos Dados com Python e DBT]
     C --> D[Armazenamento no SQL Server]
@@ -52,4 +51,3 @@ graph TD;
     D1 --> E
     E --> E1
     E1 --> E2
----
