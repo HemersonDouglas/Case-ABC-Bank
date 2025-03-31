@@ -1,0 +1,1 @@
+caminho/para/o/arquivo/operacoes-indiretas.csv filter=lfs diff=lfs merge=lfs -text
