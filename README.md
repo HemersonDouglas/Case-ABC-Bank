@@ -88,7 +88,7 @@ Estrutura de Diretórios
 │       ├── dm_fato_operacoes_diretas.sql
 │       ├── dm_fato_operacoes_indiretas.sql
 ├── seeds
-│   └── movimentacao_commodities.csv
+│   └── planilhas.csv
 ├── dbt_project.yml
 └── README.md
 ```
