@@ -6,7 +6,7 @@ with foperacoes_indiretas as (
         "juros",
         "prazo_carencia_meses",
         "prazo_amortizacao_meses",
-        "valor_contratado_reais",
+        "valor_da_operacao_em_reais",
         "valor_desembolsado_reais"
     from {{ ref('stg_operacoes_indiretas') }}
 ),
@@ -16,12 +16,11 @@ renamed as (
         cast("data_da_Contratacao" as date) as data_da_Contratacao,
         cast("cpf_cnpj" as varchar(18)) as cnpj,
         cast("municipio_codigo" as int) as municipio_codigo,
-        -- Substituir NULL por valor padrão (0 ou outro valor válido)
-        COALESCE(TRY_CAST("juros" AS decimal(10,2)), 0) AS juros,
-        COALESCE(TRY_CAST("prazo_carencia_meses" AS decimal(10,2)), 0) AS prazo_carencia_meses,
+        cast("juros" AS varchar(255)) as juros,
+        cast("prazo_carencia_meses" AS decimal(10,2)) as prazo_carencia_meses,
         cast("prazo_amortizacao_meses" as int) as prazo_amortizacao_meses, 
-        COALESCE(TRY_CAST("valor_contratado_reais" as decimal(18,2 )), 0) as valor_Contratado_Reais,
-        COALESCE(TRY_CAST("valor_desembolsado_reais" as decimal(18,2 )), 0) as valor_Desembolsado_Reais
+        COALESCE(TRY_CAST(REPLACE(REPLACE("valor_da_operacao_em_reais", '.', ''), ',', '.') AS DECIMAL(18,2)),0) AS valor_da_operacao_em_reais,
+        COALESCE(TRY_CAST(REPLACE(REPLACE("valor_desembolsado_reais", '.', ''), ',', '.') AS DECIMAL(18,2)),0) AS valor_desembolsado_reais
     from foperacoes_indiretas
 )
 

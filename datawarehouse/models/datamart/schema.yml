@@ -50,8 +50,46 @@ models:
         description: "Valor contratado das operações do ABC"
       - name: valor_desembolsado_reais
         description: "O valor liberado"
-                  
-
+  - name: dm_dim_operacoes_diretas
+    description: "Tabela dim.clientes para dados de operações diretas"
+    columns:
+      - name: cliente
+        description: "Nome do cliente"
+      - name: cnpj
+        description: "CNPJ do cliente"
+        tests:
+          - unique
+          - not_null
+      - name: uf
+        description: "Unidade federativa (UF)"
+      - name: municipio
+        description: "Classificacao do IBGE para o municipio do cliente"
+      - name: modalidade_de_apoio
+        description: "Reembolsavel ou Nao Reembolsavel"
+      - name: forma_de_apoio
+        description: "Forma direta e indireta"                  
+      - name: produto
+        description: "Produtos definem regras gerais de financiamento de acordo com cada finalidade" 
+  - name: dm_dim_operacoes_indiretas
+    description: "Tabela dim.clientes para dados de operações diretas"
+    columns:
+      - name: cliente
+        description: "Nome do cliente"
+      - name: cpf_cnpj
+        description: "CNPJ do cliente"
+        tests:
+          - unique
+          - not_null
+      - name: uf
+        description: "Unidade federativa (UF)"
+      - name: municipio
+        description: "Classificacao do IBGE para o municipio do cliente"
+      - name: modalidade_de_apoio
+        description: "Reembolsavel ou Nao Reembolsavel"
+      - name: forma_de_apoio
+        description: "Forma direta e indireta"                  
+      - name: produto
+        description: "Produtos definem regras gerais de financiamento de acordo com cada finalidade" 
 
 
 
