@@ -122,6 +122,8 @@ databasesales:
       dbname: <DB_NAME_PROD>
       schema: <DB_SCHEMA_PROD>
       threads: 1
+
+
 Executar os Seeds do DBT:
 
 dbt seed
