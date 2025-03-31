@@ -51,6 +51,7 @@ graph TD
     D1 --> E
     E --> E1
     E1 --> E2
+---
 
 1. Seeds
 Os seeds são dados estáticos que são carregados no Data Warehouse a partir de arquivos CSV. Neste projeto, usamos seeds para carregar dados de operações financeiras.
@@ -88,9 +89,11 @@ Estrutura de Diretórios
 │   └── movimentacao_commodities.csv
 ├── dbt_project.yml
 └── README.md
+
 Executando o Projeto
+
 Requisitos
-Python 3.7+
+Python 3.12
 DBT
 Passos para Execução
 Clonar o Repositório:
