@@ -96,10 +96,13 @@ Estrutura de Diretórios
 
 Executando o Projeto
 
-Requisitos
+Requisitos:
+
 Python 3.12
 DBT
+
 Passos para Execução
+
 Clonar o Repositório:
 
 git clone <URL-do-Repositório>
